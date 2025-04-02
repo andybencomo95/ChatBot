@@ -18,8 +18,6 @@ const nextConfig = {
   },
   experimental: {
     webpackBuildWorker: true,
-    // Explicitly enable app directory
-    appDir: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },

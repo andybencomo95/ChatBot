@@ -17,7 +17,7 @@ module.exports = {
   
   // Ensure Netlify knows about the app directory
   nextjs: {
-    appDir: true
+    // The appDir option is no longer needed in newer Next.js versions
   },
   
   // Configure functions

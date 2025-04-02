@@ -3,7 +3,7 @@
 
 module.exports = {
   // Tell Netlify where to find the app directory
-  appDir: true,
+  // appDir: true, - Removed as it's no longer needed in newer Next.js versions
   
   // Ensure Netlify knows this is a Next.js app
   framework: 'next',
@@ -15,8 +15,6 @@ module.exports = {
   // This is important for the build process
   trailingSlash: false,
   
-  // Additional configuration to help Netlify recognize the app directory
-  experimental: {
-    appDir: true
-  }
+  // The appDir option is no longer needed in newer Next.js versions
+  // Removed experimental.appDir as it's deprecated
 };
