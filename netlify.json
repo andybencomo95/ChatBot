@@ -1,0 +1,9 @@
+{
+  "build": {
+    "environment": {
+      "NETLIFY_NEXT_PLUGIN_SKIP": "false",
+      "NODE_VERSION": "18",
+      "NEXT_TELEMETRY_DISABLED": "1"
+    }
+  }
+}

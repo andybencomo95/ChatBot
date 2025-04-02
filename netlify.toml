@@ -2,7 +2,15 @@
   command = "npm run build"
   publish = ".next"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Configure build environment
+[build.environment]
+  NODE_VERSION = "18"
+  NEXT_TELEMETRY_DISABLED = "1"
+
+# Force Netlify to recognize the app directory
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
